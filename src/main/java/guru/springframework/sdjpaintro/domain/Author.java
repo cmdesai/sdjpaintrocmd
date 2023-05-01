@@ -8,7 +8,7 @@ import jakarta.persistence.Id;
 import java.util.Objects;
 
 @Entity
-public class author {
+public class Author {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
@@ -45,7 +45,7 @@ public class author {
         if (this == o) return true;
         if (o == null || getClass() != o.getClass()) return false;
 
-        author author = (author) o;
+        Author author = (Author) o;
 
         return Objects.equals(id, author.id);
     }
