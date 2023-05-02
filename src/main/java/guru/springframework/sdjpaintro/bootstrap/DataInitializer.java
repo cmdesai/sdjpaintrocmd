@@ -51,7 +51,5 @@ public class DataInitializer implements CommandLineRunner {
         BookUuid savedBookUuid = bookUuidRepository.save(bookUuid);
         System.out.println("Saved Book UUID: " + savedBookUuid.getId());
 
-
-
     }
 }
